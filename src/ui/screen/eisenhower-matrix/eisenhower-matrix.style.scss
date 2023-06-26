@@ -1,0 +1,129 @@
+.eisenhower-matrix {
+  height: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &__conteudo {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  &__list {
+    padding: 0;
+    /* margin-top: 20px; */
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 140px;
+    width: 100%;
+
+    &::-webkit-scrollbar {
+      width: 5px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: #f1f1f1;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: #888;
+      border-radius: 10px;
+    }
+  }
+
+  &__container {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__urgente-importante {
+      margin-bottom: 25px;
+
+      &::after {
+        content: '';
+        width: 4px;
+        height: 195px;
+        background-color: #f29166;
+        position: absolute;
+        bottom: 45.5%;
+        right: 52.75%;
+      }
+    }
+
+    &__nao-urgente-importante {
+      margin-bottom: 25px;
+
+      &::after {
+        content: '';
+        width: 28%;
+        height: 4px;
+        background-color: #f3ca40;
+        position: absolute;
+        bottom: 45.5%;
+        right: 25%;
+      }
+    }
+
+    &__urgente-nao-importante {
+      margin-top: 25px;
+
+      &::after {
+        content: '';
+        width: 28%;
+        height: 4px;
+        background-color: #2e7f7b;
+        position: absolute;
+        bottom: 45.5%;
+        right: 53%;
+      }
+    }
+
+    &__nao-urgente-nao-importante {
+      margin-top: 25px;
+
+      &::after {
+        content: '';
+        width: 4px;
+        height: 195px;
+        background-color: #788bf5;
+        position: absolute;
+        bottom: 16%;
+        right: 52.75%;
+      }
+    }
+  }
+
+  &__titulo {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+
+    text-align: center;
+    display: flex;
+    align-items: center;
+    width: 250px;
+    border-radius: 9999px;
+    justify-content: center;
+    padding: 8px;
+    margin: 0 5px;
+
+    &__urgente-importante {
+      background-color: #f29166;
+    }
+
+    &__nao-urgente-importante {
+      background-color: #f3ca40;
+    }
+
+    &__urgente-nao-importante {
+      background-color: #2e7f7b;
+    }
+
+    &__nao-urgente-nao-importante {
+      background-color: #788bf5;
+    }
+  }
+}

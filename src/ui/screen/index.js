@@ -1,0 +1,7 @@
+export * from './home/home.screen'
+export * from './pomodoro/pomodoro.screen'
+export * from './task/task.screen'
+export * from './eisenhower-matrix/eisenhower-matrix.screen'
+export * from './register/register.screen'
+export * from './login/login.screen'
+export * from './data/data.screen'

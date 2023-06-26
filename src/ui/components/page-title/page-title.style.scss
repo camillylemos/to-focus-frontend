@@ -1,0 +1,12 @@
+.c-titulo {
+  font-size: 30px;
+  font-weight: 500;
+  color: #2e7f7b;
+  margin: 0;
+  display: inline-block;
+  font-family: 'Roboto', sans-serif;
+
+  @media (max-width: 880px) {
+    font-size: 28px;
+  }
+}

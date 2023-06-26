@@ -1,0 +1,21 @@
+{
+  "arrowParens": "avoid",
+  "bracketSameLine": false,
+  "bracketSpacing": true,
+  "embeddedLanguageFormatting": "off",
+  "insertPragma": false,
+  "jsxSingleQuote": false,
+  "endOfLine": "lf",
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": false,
+  "singleAttributePerLine": false,
+  "singleQuote": true,
+  "tabWidth": 2,
+  "useTabs": false,
+  "htmlWhitespaceSensitivity": "css",
+  "importOrder": ["^react", "<THIRD_PARTY_MODULES>", "^@.*s$", "^[./]","\\s", "/\\.scss/"],
+  "importOrderSortSpecifiers": true
+}

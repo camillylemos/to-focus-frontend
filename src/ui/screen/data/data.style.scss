@@ -1,0 +1,67 @@
+.relatorio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 93%;
+  justify-content: space-between;
+
+  &__grafico {
+    width: 300px;
+
+    &__legenda {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+
+      &__cor {
+        &--verde {
+          width: 14px;
+          height: 14px;
+          margin-right: 10px;
+          border-radius: 2px;
+          background-color: #2e7f7b;
+        }
+
+        &--laranja {
+          width: 14px;
+          height: 14px;
+          margin-right: 10px;
+          border-radius: 2px;
+          background-color: #f29166;
+        }
+      }
+
+      &__texto {
+        color: #2e7f7b;
+        font-weight: 500;
+        font-size: 16px;
+      }
+    }
+  }
+
+  &__legenda {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    margin-left: 40px;
+  }
+
+  &__texto {
+    color: #2e7f7b;
+    font-weight: 500;
+    font-size: 16px;
+  }
+
+  &__autenticacao {
+    color: #2e7f7b;
+    font-weight: 500;
+    font-size: 18px;
+  }
+
+  &__pomodoro,
+  &__tarefa {
+    display: flex;
+    align-items: center;
+  }
+}

@@ -1,0 +1,14 @@
+build
+node_modules
+public
+README.md
+*.config.*
+*.yml
+
+cypress/downloads
+cypress/fixtures
+cypress/plugins
+cypress/support
+
+.scannerwork
+helm-chart

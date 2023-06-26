@@ -1,0 +1,88 @@
+.chip {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+
+  text-align: center;
+  display: flex;
+  align-items: center;
+  width: 180px;
+  border-radius: 9999px;
+  justify-content: center;
+  padding: 8px;
+  margin: 0 5px;
+
+  &__icon {
+    width: 20px;
+    margin-right: 4px;
+  }
+
+  &__focus {
+    border: 2px solid #788bf5cc;
+    color: #788bf5cc;
+
+    & > svg {
+      margin-right: 5px;
+      width: 21px;
+      fill: #788bf5cc;
+    }
+
+    &.ativo {
+      background: #788bf5cc;
+      color: white;
+      border: none;
+
+      & > svg {
+        margin-right: 5px;
+        width: 20px;
+        fill: white;
+      }
+    }
+  }
+
+  &__short-break {
+    border: 2px solid #73a84acc;
+    color: #73a84acc;
+
+    & > svg {
+      margin-right: 5px;
+      width: 20px;
+      fill: #73a84acc;
+    }
+
+    &.ativo {
+      background: #73a84acc;
+      color: white;
+      border: none;
+
+      & > svg {
+        margin-right: 5px;
+        width: 20px;
+        fill: white;
+      }
+    }
+  }
+
+  &__long-break {
+    border: 2px solid #9196b4cc;
+    color: #9196b4cc;
+
+    & > svg {
+      margin-right: 5px;
+      width: 20px;
+      fill: #9196b4cc;
+    }
+
+    &.ativo {
+      background: #9196b4cc;
+      color: white;
+      border: none;
+
+      & > svg {
+        margin-right: 5px;
+        width: 20px;
+        fill: white;
+      }
+    }
+  }
+}

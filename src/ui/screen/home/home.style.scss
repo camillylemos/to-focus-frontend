@@ -1,0 +1,22 @@
+.home {
+  padding: 0 70px;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    height: 75vh;
+    align-items: center;
+  }
+
+  &__main {
+    width: 94%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__menu {
+    width: 6%;
+  }
+}

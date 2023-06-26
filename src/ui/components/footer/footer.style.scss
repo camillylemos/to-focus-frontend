@@ -1,0 +1,25 @@
+.footer {
+  width: -webkit-fill-available;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 0 70px;
+
+  &__config {
+    background-color: #d9d9d980;
+    padding: 5px 15px;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__dias {
+    color: #f29166;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 3px 2px;
+    border-radius: 2px;
+  }
+}
