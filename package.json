@@ -36,6 +36,9 @@
     "format-check": "npx prettier --config .prettierrc --check ./src",
     "format-fix": "prettier --config .prettierrc --write ./src"
   },
+  "engines": {
+    "node": "18.16.0"
+  },
   "eslintConfig": {
     "extends": [
       "react-app",
