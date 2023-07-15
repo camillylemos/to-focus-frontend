@@ -24,12 +24,13 @@
     "react-scripts": "5.0.1",
     "react-timer-hook": "3.0.5",
     "sass": "1.56.1",
-    "web-vitals": "2.1.4"
+    "web-vitals": "2.1.4",
+    "@craco/craco": "7.0.0"
   },
   "scripts": {
     "heroku-postbuild": "npm run build",
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "craco start",
+    "build": "craco build",
     "dev": "craco start",
     "test": "craco test",
     "eject": "craco eject",
@@ -58,7 +59,6 @@
     ]
   },
   "devDependencies": {
-    "@craco/craco": "7.0.0",
     "@trivago/prettier-plugin-sort-imports": "4.1.1",
     "react-app-alias": "2.2.2"
   }
