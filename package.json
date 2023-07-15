@@ -28,8 +28,9 @@
   },
   "scripts": {
     "heroku-postbuild": "npm run build",
-    "start": "craco start",
-    "build": "craco build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "dev": "craco start",
     "test": "craco test",
     "eject": "craco eject",
     "format-check": "npx prettier --config .prettierrc --check ./src",
