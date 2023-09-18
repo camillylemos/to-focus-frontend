@@ -4,7 +4,8 @@ import { useGlobalToken } from '@contexts'
 import { RequestParams } from '@utils'
 
 const requisicaoAxios = axios.create({
-  baseURL: 'https://to-focus-backend-8603717bcb7b.herokuapp.com/',
+  //baseURL: 'https://to-focus-backend-8603717bcb7b.herokuapp.com/',
+   baseURL: 'http://localhost:8080/',
 })
 
 const useAxios = () => {

@@ -28,7 +28,10 @@
     "sass": "1.56.1",
     "web-vitals": "2.1.4"
   },
+  "homepage": "https://camillylemos.github.io/to-focus-frontend",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "node server.js",
     "build": "craco build",
     "dev": "craco start",
@@ -60,6 +63,7 @@
   },
   "devDependencies": {
     "@trivago/prettier-plugin-sort-imports": "4.1.1",
+    "gh-pages": "^6.0.0",
     "react-app-alias": "2.2.2"
   }
 }
