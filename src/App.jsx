@@ -47,7 +47,7 @@ function App() {
                   <ThemeProvider theme={defaultTheme}>
                     <Header />
                     <Routes>
-                      <Route path="/" element={<HomeScreen />} exact />
+                      <Route path="/to-focus-frontend" element={<HomeScreen />} exact />
                       <Route path="/login" element={<LoginScreen />} exact />
                       <Route
                         path="/cadastro"

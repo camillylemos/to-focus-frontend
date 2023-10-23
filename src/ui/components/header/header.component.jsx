@@ -38,18 +38,14 @@ const Header = () => {
       <header className="header">
         <img className="header__logo" src={logo} alt="" />
         <button className="header__icon" onClick={() => navigate('/login')}>
-          {token ? (
-            <Typography sx={{ fontWeight: 500, mr: 1 }} color="secondary">
-              Olá, Carol
-            </Typography>
-          ) : (
+          {!token &&
             <Typography
               sx={{ mr: 1, textDecoration: 'underline' }}
               color="secondary"
             >
               Faça login
             </Typography>
-          )}
+          }
 
           <AccountCircle sx={{ fontSize: 50 }} color="secondary" />
         </button>

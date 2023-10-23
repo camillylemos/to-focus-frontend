@@ -34,7 +34,7 @@ const CadastroScreen = () => {
 
   useEffect(() => {
     if (JSON.parse(localStorage.getItem('token'))) {
-      navigate('/')
+      navigate('/to-focus-frontend')
     }
   }, [navigate])
 

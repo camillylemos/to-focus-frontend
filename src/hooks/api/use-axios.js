@@ -5,7 +5,8 @@ import { RequestParams } from '@utils'
 
 const requisicaoAxios = axios.create({
   //baseURL: 'https://to-focus-backend-8603717bcb7b.herokuapp.com/',
-   baseURL: 'http://localhost:8080/',
+    // baseURL: 'http://localhost:8080/'
+   baseURL: 'https://to-focus-backend-production.up.railway.app',
 })
 
 const useAxios = () => {

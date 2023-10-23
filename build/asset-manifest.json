@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/to-focus-frontend/static/css/main.6bbbd231.css",
-    "main.js": "/to-focus-frontend/static/js/main.ed7f3fc0.js",
+    "main.js": "/to-focus-frontend/static/js/main.e611db03.js",
     "static/media/LOGOTIPO TCC (1).png": "/to-focus-frontend/static/media/LOGOTIPO TCC (1).2550689ba226cf3a65ce.png",
     "static/media/focus.svg": "/to-focus-frontend/static/media/focus.7d4f6e7967e600ac0532949da3077e5e.svg",
     "static/media/note.svg": "/to-focus-frontend/static/media/note.d9932f3daf5e0a719e1f3c1310d295f2.svg",
@@ -11,10 +11,10 @@
     "static/media/matrix.svg": "/to-focus-frontend/static/media/matrix.7303a3e87d0b9560084d4968f40151b8.svg",
     "index.html": "/to-focus-frontend/index.html",
     "main.6bbbd231.css.map": "/to-focus-frontend/static/css/main.6bbbd231.css.map",
-    "main.ed7f3fc0.js.map": "/to-focus-frontend/static/js/main.ed7f3fc0.js.map"
+    "main.e611db03.js.map": "/to-focus-frontend/static/js/main.e611db03.js.map"
   },
   "entrypoints": [
     "static/css/main.6bbbd231.css",
-    "static/js/main.ed7f3fc0.js"
+    "static/js/main.e611db03.js"
   ]
 }

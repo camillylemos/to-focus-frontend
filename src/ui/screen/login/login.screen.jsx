@@ -28,7 +28,7 @@ const LoginScreen = () => {
 
   useEffect(() => {
     if (JSON.parse(localStorage.getItem('token'))) {
-      navigate('/')
+      navigate('/to-focus-frontend')
     }
   }, [navigate])
 
@@ -44,7 +44,7 @@ const LoginScreen = () => {
       if (response) {
         setToken(response.token)
         localStorage.setItem('token', JSON.stringify(response.token))
-        navigate('/')
+        navigate('/to-focus-frontend')
       }
     }
   }
