@@ -7,7 +7,7 @@ const Textarea = ({ formData, handleChange }) => {
       minRows={3}
       style={{
         resize: 'none',
-        width: 500,
+        // width: 500,
         background: 'transparent',
         borderRadius: '3px',
         ':focus': {

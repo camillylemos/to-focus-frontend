@@ -40,4 +40,12 @@
   .refresh__icon {
     transform: scale(1.3);
   }
+
+  @media screen and (max-width: 768px) {
+    &__ciclo {
+      margin: 16px 0;
+      flex-direction: column;
+    }
+  }
+
 }

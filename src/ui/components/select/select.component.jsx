@@ -8,7 +8,7 @@ import {
 
 const Select = ({ formData, handleChange }) => {
   return (
-    <FormControl sx={{ m: 1, width: 270, margin: 0 }}>
+    <FormControl sx={{ m: 1, margin: 0 }}>
       <InputLabel>{formData.label}</InputLabel>
       <_Select {...formData} onChange={handleChange}>
         {formData.options.map(({ value, name }) => (

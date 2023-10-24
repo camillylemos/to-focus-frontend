@@ -97,7 +97,7 @@ const EisenhowerMatrixScreen = () => {
 
   return (
     <section className="eisenhower-matrix">
-      <PageTitle titulo="Matriz de Eisenhower" />
+      <PageTitle titulo="Matriz de Eisenhower" className="eisenhower-matrix__titulo-pagina" />
       <div className="eisenhower-matrix__conteudo">{renderTaskList()}</div>
     </section>
   )

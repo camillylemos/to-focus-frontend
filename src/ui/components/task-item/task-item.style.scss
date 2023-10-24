@@ -38,6 +38,10 @@
         outline: none;
         color: hwb(0deg 31% 69%);
 
+        @media screen and (max-width: 768px) {
+          font-size: 14px;
+        }
+
         &--realizado {
           font-weight: 400;
           font-size: 16px;
@@ -57,6 +61,12 @@
           border: none;
           resize: none;
           outline: none;
+
+          
+        @media screen and (max-width: 768px) {
+          font-size: 14px;
+        }
+
         }
       }
     }
@@ -257,5 +267,10 @@
 
       margin-left: 40px;
     }
+  }
+
+  @media screen and (max-width: 768px) {
+    &__descricao {
+      width: 80%;}
   }
 }

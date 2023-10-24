@@ -31,5 +31,41 @@
     justify-content: space-between;
     width: 95%;
     margin: 12px 0;
+
+    & > div {
+      width: 270px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+  &__lista {
+    height: 29vh;
+  }
+}}
+
+@media screen and (max-width: 768px) {
+  .task__form {
+    flex-direction: column; /* Altera a direção para coluna */
+    align-items: stretch; /* Todos os elementos têm a largura igual */
+    margin: 0 0 35px 0;
+
+    & > div {
+      width: initial;
+      margin-bottom: 10px;
+    }
+  }
+
+  /* Estilos adicionais para os elementos dentro do formulário quando empilhados */
+  .task__form .task__form__textarea {
+    width: 100%; /* O textarea deve ocupar toda a largura */
+    margin-top: 12px; /* Adicione um espaçamento superior */
+  }
+  .task__form button {
+    width: 100%; /* O botão também deve ocupar toda a largura */
+    margin-top: 15px;
   }
 }
+
+
+
+

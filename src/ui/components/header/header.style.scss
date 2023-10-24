@@ -17,4 +17,9 @@
     width: 230px;
     height: 40px;
   }
+
+  @media screen and (max-width: 768px) {
+    padding: 0 15px;
+    margin-top: 10px;
+  }
 }

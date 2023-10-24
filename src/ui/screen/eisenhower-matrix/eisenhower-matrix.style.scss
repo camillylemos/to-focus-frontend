@@ -42,57 +42,57 @@
     &__urgente-importante {
       margin-bottom: 25px;
 
-      &::after {
-        content: '';
-        width: 4px;
-        height: 195px;
-        background-color: #f29166;
-        position: absolute;
-        bottom: 45.5%;
-        right: 52.75%;
-      }
+      // &::after {
+      //   content: '';
+      //   width: 4px;
+      //   height: 195px;
+      //   background-color: #f29166;
+      //   position: absolute;
+      //   bottom: 45.5%;
+      //   right: 52.75%;
+      // }
     }
 
     &__nao-urgente-importante {
       margin-bottom: 25px;
 
-      &::after {
-        content: '';
-        width: 28%;
-        height: 4px;
-        background-color: #f3ca40;
-        position: absolute;
-        bottom: 45.5%;
-        right: 25%;
-      }
+      // &::after {
+      //   content: '';
+      //   width: 28%;
+      //   height: 4px;
+      //   background-color: #f3ca40;
+      //   position: absolute;
+      //   bottom: 45.5%;
+      //   right: 25%;
+      // }
     }
 
     &__urgente-nao-importante {
       margin-top: 25px;
 
-      &::after {
-        content: '';
-        width: 28%;
-        height: 4px;
-        background-color: #2e7f7b;
-        position: absolute;
-        bottom: 45.5%;
-        right: 53%;
-      }
+      // &::after {
+      //   content: '';
+      //   width: 28%;
+      //   height: 4px;
+      //   background-color: #2e7f7b;
+      //   position: absolute;
+      //   bottom: 45.5%;
+      //   right: 53%;
+      // }
     }
 
     &__nao-urgente-nao-importante {
       margin-top: 25px;
 
-      &::after {
-        content: '';
-        width: 4px;
-        height: 195px;
-        background-color: #788bf5;
-        position: absolute;
-        bottom: 16%;
-        right: 52.75%;
-      }
+      // &::after {
+      //   content: '';
+      //   width: 4px;
+      //   height: 195px;
+      //   background-color: #788bf5;
+      //   position: absolute;
+      //   bottom: 16%;
+      //   right: 52.75%;
+      // }
     }
   }
 
@@ -126,4 +126,115 @@
       background-color: #788bf5;
     }
   }
+}
+.eisenhower-matrix {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%; /* Removido o height fixo */
+
+  &__conteudo {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  &__container {
+
+
+    &__urgente-importante::after {
+      /* Ajuste as dimensões e a posição para a matriz de Eisenhower */
+      content: '';
+      width: 4px;
+      height: 30%;
+      background-color: #f29166;
+      position: absolute;
+      top: 20%;
+      right: 50%;
+    }
+
+    &__nao-urgente-importante::after {
+      content: '';
+      width: 30%;
+      height: 4px;
+      background-color: #f3ca40;
+      position: absolute;
+      bottom: 50%;
+      left: 50%;
+    }
+
+    &__urgente-nao-importante::after {
+      content: '';
+      width: 30%;
+      height: 4px;
+      background-color: #2e7f7b;
+      position: absolute;
+      bottom: 50%;
+      right: 50%;
+    }
+
+    &__nao-urgente-nao-importante::after {
+      content: '';
+      width: 4px;
+      height: 30%;
+      background-color: #788bf5;
+      position: absolute;
+      bottom: 20%;
+      right: 50%;
+    }
+  }
+}
+
+.eisenhower-matrix {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%; /* Removido o height fixo */
+  margin: 0 auto; /* Centralize o contêiner na tela */
+  max-width: 1200px; 
+  justify-content: center; /* Defina uma largura máxima para a matriz */
+
+  &__conteudo {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  &__titulo-pagina {
+    display: none;
+  }
+
+  @media screen and (max-width: 768px) {
+    // margin-bottom: 45px;
+
+    &__titulo-pagina {
+      display: initial;
+    }
+
+    &__titulo {
+      width: initial;
+    }
+
+    &__container {
+
+
+      &__urgente-importante::after {
+        /* Ajuste as dimensões e a posição para a matriz de Eisenhower */
+        content: none;
+      }
+  
+      &__nao-urgente-importante::after {
+        content: none;
+      }
+  
+      &__urgente-nao-importante::after {
+        content: none;
+      }
+  
+      &__nao-urgente-nao-importante::after {
+        content: none;
+      }
+  }}
 }

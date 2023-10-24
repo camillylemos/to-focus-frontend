@@ -300,8 +300,8 @@ const PomodoroScreen = () => {
             variant="contained"
             onClick={handleClickModalSettings}
             sx={{
-              width: 80,
-              height: 80,
+              width: 60,
+              height: 60,
               borderRadius: 5,
               opacity: 0.25,
             }}
@@ -314,8 +314,8 @@ const PomodoroScreen = () => {
             variant="contained"
             onClick={buttonConfig.onClick}
             sx={{
-              width: 128,
-              height: 96,
+              width: 90,
+              height: 80,
               borderRadius: 5,
               margin: 1,
             }}
@@ -328,8 +328,8 @@ const PomodoroScreen = () => {
             variant="contained"
             onClick={handleClickRestartPomodoro}
             sx={{
-              width: 80,
-              height: 80,
+              width: 60,
+              height: 60,
               borderRadius: 5,
               opacity: 0.25,
             }}

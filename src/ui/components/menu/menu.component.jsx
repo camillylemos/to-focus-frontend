@@ -8,15 +8,18 @@ import {
 import { Button, Tooltip } from '@mui/material'
 import { RoutesConfigGlobal, useGlobalToken } from '@contexts'
 import './menu.style.scss'
+import { useState } from 'react'
 
 const style = {
   borderRadius: 5,
   margin: 0.4,
   width: 60,
   height: 60,
+  boxShadow: 'none'
 }
 
 const Menu = () => {
+  const [activeScreen, setActiveScreen] = useState('PomodoroScreen'); 
   const [, setRoutesConfig] = RoutesConfigGlobal()
   const [token] = useGlobalToken()
 
@@ -24,6 +27,7 @@ const Menu = () => {
 
   const handleClick = screen => {
     setRoutesConfig(screen)
+    setActiveScreen(screen);
   }
 
   const renderButtons = () => (
@@ -32,7 +36,8 @@ const Menu = () => {
         variant="contained"
         onClick={() => handleClick('PomodoroScreen')}
         sx={style}
-        color="primary"
+       
+        color={activeScreen === 'PomodoroScreen' ? 'secondary' : 'primary'}
       >
         {<TimerOutlined className="pomodoro__icon" />}
       </Button>
@@ -41,7 +46,8 @@ const Menu = () => {
         variant="contained"
         onClick={() => handleClick('EisenhowerMatrixScreen')}
         sx={style}
-        color="primary"
+       
+        color={activeScreen === 'EisenhowerMatrixScreen' ? 'secondary' : 'primary'}
       >
         {<GridViewRounded className="matrix__icon" />}
       </Button>
@@ -50,7 +56,7 @@ const Menu = () => {
         variant="contained"
         onClick={() => handleClick('TaskScreen')}
         sx={style}
-        color="primary"
+        color={activeScreen === 'TaskScreen' ? 'secondary' : 'primary'}
       >
         {<FormatListBulletedRounded className="list__icon" />}
       </Button>
@@ -59,7 +65,7 @@ const Menu = () => {
         variant="contained"
         onClick={() => handleClick('RelatorioScreen')}
         sx={style}
-        color="primary"
+        color={activeScreen === 'RelatorioScreen' ? 'secondary' : 'primary'}
       >
         {<Insights className="graphic__icon" />}
       </Button>
@@ -73,6 +79,7 @@ const Menu = () => {
         onClick={() => handleClick('PomodoroScreen')}
         sx={style}
         color="primary"
+        elevation={0} 
       >
         {<TimerOutlined className="pomodoro__icon" />}
       </Button>
